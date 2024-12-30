@@ -1,0 +1,5 @@
+HOST_MASTER_1 = "10.10.12.4"
+HOST_MASTER_2 = "10.10.12.21"
+HOST_SLAVE_1 = "10.10.12.5"
+HOST_SLAVE_2 = "10.10.12.22"
+THUC_THI = C  # Giá trị có thể là 'C' hoặc 'K'

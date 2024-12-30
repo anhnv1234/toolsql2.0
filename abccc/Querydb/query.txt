@@ -1,0 +1,5 @@
+SELECT t."TaxCode"
+FROM "MInvoice"."TenantCompanies" t
+LEFT JOIN "MInvoice"."Devices" p ON t."TenantId" = p."TenantId"
+WHERE (p."Id" IS NOT NULL )
+   AND t."TenantId" = %s LIMIT 1 ;

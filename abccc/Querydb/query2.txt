@@ -1,0 +1,10 @@
+SELECT
+    a."Name",
+    a."Value",
+    a."TenantId",
+    b."Name"
+FROM "public"."AbpTenantConnectionStrings" a
+JOIN "AbpTenants" b
+ON b."Id" = a."TenantId"
+WHERE b."Name" = %s
+LIMIT 10;
